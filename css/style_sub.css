@@ -253,7 +253,7 @@ hr {float: left;
 .photo_review > h2 {
     margin: 0 15% 30px 15%;
 }
-.photo_review img {float: left; width: 20%;
+.photo_review img {float: left; width: 20%; height:120px;
     margin: 0 10px 0 0;}
 .photo_review img:hover {opacity: 0.7; cursor: pointer;}
 .photo_review > img:nth-of-type(1) {margin: 0 10px 0 15%;}
