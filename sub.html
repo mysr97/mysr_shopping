@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subpage</title>
+    <link rel="stylesheet" href="css/style_sub.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.r1').click(function(){
+                $('.r1_t').slideToggle()
+            });
+            $('.r2').click(function(){
+                $('.r2_t').slideToggle()
+            });
+            $('.r3').click(function(){
+                $('.r3_t').slideToggle()
+            });
+        });
+
+        $(function(){
+    $('.prev').click(function(){
+        $('.slide li:last').prependTo('.slide');
+        $('.slide').css('margin-left',-200);
+        $('.slide').stop().animate({marginLeft:0},800);
+    });
+
+    $('.next').click(function(){        
+        $('.slide').stop().animate({marginLeft:-200},800, function(){
+            $('.slide li:first').appendTo('.slide');
+            $('.slide').css({marginLeft:0});
+        });
+    });
+});
+    </script>
+
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="#"><img src="img/logo.png" alt="로고"></a></div>
+        <nav>
+            <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">BRAND STORY</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">STORE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="slide_subproduct">
+        <ul class="slide">
+            <li><a href="#"><img src="img/bluesage.png" alt="1"></a>
+                <p class="p1_select">Blue Sage & Sea Salt</p>
+                <p class="p2_select">블루세이지 & 씨 솔트</p></li>
+            <li><a href="#"><img src="img/bombshell.png" alt="2"></a>
+                <p class="p1">Bombshell</p>
+                <p class="p2">밤쉘</p></li>
+            <li><a href="#"><img src="img/carab.png" alt="3"></a>
+                <p class="p1">Calabria Bergamot</p>
+                <p class="p2">칼라브리아 버가못</p></li>
+            <li><a href="#"><img src="img/jasmin.png" alt="4"></a>
+                <p class="p1">Southern Jasmine</p>
+                <p class="p2">서든 자스민</p></li>
+            <li><a href="#"><img src="img/ohai.png" alt="5"></a>
+                <p class="p1">Ojai Garden</p>
+                <p class="p2">오하이 가든</p></li>
+            <li><a href="#"><img src="img/moss.png" alt="6"></a>
+                <p class="p1">Sea Moss</p>
+                <p class="p2">씨 모스</p></li>
+            <li><a href="#"><img src="img/lavender.png" alt="7"></a>
+                <p class="p1">Eucalyptus Lavender</p>
+                <p class="p2">유칼립투스 라벤더</p></li>
+        </ul>
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+    </div>
+
+
+
+    <div id="pop">
+
+        <div class="popbox">
+            <div class="popimgbox">
+                <img src="img/bluesage.png" alt="1">
+            </div>
+            <div class="poptextbox">
+                <h2>bluesage & Sea salt</h2>
+                <h4>블루세이지 & 씨 솔트</h4>
+                <span>10ml</span>
+                <span>43,000원</span>
+                <p>블루세이지(허브계열)와 라구나 비치의 바다 소금을 절묘하게 블렌딩.
+                    새벽이슬에 젖은 신선한 풀잎과 울창한 숲의 시원한 향을 연출.</p>
+                <button class="imgbutton" type="button" onclick=""><a href="#"><img src="img/bag.png" alt="1"></a></button>
+                <div class="buybutton"><a href="#">바로 구매하기</a></div>
+                <h5><a href="#sub_review">사용후기 보러가기 ></a></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll_bottom">
+    <a class="scroll_bottom" href="#video"><img class="scroll" src="img/scroll.png" alt="스크롤"></a></div>
+
+    <div class="undertextbox">
+        <h2>Pure Oil Perfume</h2>
+        <p>These non-alcoholic signature oil perfumes are blended with our special and unique blending technique by skilled perfumers since 1987. These perfumes are the perfect companion to unleash your greaness, and for your healthy lifestyle.
+            <br><br>
+            We infused an authentic soul of nature with the greatest pride of American spirit into every product.</p>
+
+    </div>
+
+    <div id="photo">
+    </div>
+
+    <div id="video">
+        <video src="img/bluesage_video.mp4" loop muted autoplay></video>
+    </div>
+
+    <div class="undertextbox2">
+        <h2>[Blue Sage & Sea Salt│블루세이지 & 씨 솔트]</h2> <br>
+        <h3>오일 퍼퓸 사용 방법</h3>
+        <p>– 피부 연출 시
+            소량을 손목 안쪽에 묻힌 후 목과 어깨에 연결되는 부위에 살짝 문질러 주면 피부에 스며든 상태에서 향이 자연스럽게 14시간 정도 발향 됩니다.
+            <br><br>
+            – 헤어 연출 시
+            소량을 손목 안쪽에 묻힌 후 가볍게 문질러 머리카락 끝 쪽에 살짝 문질러 주면 21시간 정도 향을 은은하게 즐길 수 있습니다.</p>
+
+    </div>
+
+    <hr>
+
+    <div id="sub_review">
+
+        <div class="purchase_review">
+            <h2>사용 후기 ></h2>
+            <div class="purchase_review_box">
+            <span class="r1">1. 향 진짜 좋아요 용량이 작긴한데 오일이라 .. <a>더보기</a></span>
+            <p class="r1_t">향 진짜 좋아요 용량이 작긴한데 오일이라 조금만 써도 향이 오래간다고 하네요
+                개인적으론 뿌리는것보다 롤링형식이라 더 편하네요.</p>
+            <span class="r2">2. 친구 밤쉘 쓰는거 보고 반해서 샀습니다. 잔.. <a>더보기</a></span>
+            <p class="r2_t">친구 밤쉘 쓰는거 보고 반해서 샀습니다. 잔향이 너무 좋아요 블루세이지도 같이 사봤어요.
+                개인적으론 뿌리는것보다 롤링형식이라 더 편하네요.</p>
+            <span class="r3">3. 백화점에서 디퓨져와 핸드퍼퓸 사면서, 오일.. <a>더보기</a></span>
+            <p class="r3_t">백화점에서 디퓨져와 핸드퍼퓸 사면서, 오일퍼퓸 시향 후 선택한 3종류입니다. 시향지의 잔향도 오래가고, 향 진행도 좋아서 조만간 몇종류 더 구매할 예정입니다. 감사합니다~</p>
+        </div>
+        </div>
+
+        <div class="photo_review">
+            <h2>포토 후기 ></h2>
+            <img src="img/sub_review1.jpg" alt="1">
+            <img src="img/sub_review1.jpg" alt="2">
+            <img src="img/sub_review1.jpg" alt="3">
+        </div>
+
+    </div>
+    
+    <footer>
+        <div id="footerbox">
+            <p><b>CS CENTER</b><br><br>
+            02-466-7941<br>
+            MON-FRI : 10:00 ~ 16:00<br>
+            LUNCH : 11:30 ~ 13:00<br>
+            OFF : SAT, SUN, HOLIDAY
+            </p>
+
+            <p><b>BANK INFO</b><br><br>
+                03350589301020<br>
+                기업은행<br>
+                예금주 : 주식회사디엠코스메틱스코리아
+            </p>
+
+            <p>
+                <b>NOTICE</b><br>
+            </p>
+
+            <a href="https://www.instagram.com/danielstruth.official/"><img src="img/insta.png" alt="인스타"></a>
+           
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li>｜</li>
+                <li><a href="#">이용약관</a></li>
+                <li>｜</li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li>｜</li>
+                <li><a href="#">이용안내</a></li>
+                <li>｜</li>
+                <li><a href="#">광고/제휴 문의</a></li>
+            </ul>
+            <span>
+                주식회사 디엠코스메틱스 코리아 서울특별시 성동구 아차산로17길 48 (성수 SK V1 CENTER I) 304<br>
+                대표 :LEEDANIELNCHANG 사업자등록번호 :158-86-02223 사업자번호조회 > 통신판매업신고번호 :제 2021-서울성동-01928호 개인정보관리자 :이다니엘<br>
+                대표번호 :02-466-7941 팩스번호 :02-467-7941 이메일 :sales@dmcosmetics.co 호스팅제공 :엔에이치엔커머스(주) <br>
+                copyright. 2022. dm-cosmetics.com. All rights reserved.
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
